@@ -48,6 +48,8 @@
 
     <hr>
 
+    <h1>Criando caixa de senhas</h1>
+
     <form action="assets/pages/cadastro.php" method="post">
 
         <p>
@@ -68,6 +70,34 @@
 
 
     </form>
+    <hr>
+
+    <h1>Elementos em um Formulário</h1>
+
+    <form action="assets/pages/cadastro.php" method="post" autocomplete="off">
+
+        <p>
+            <label for="inome">
+                Nome : 
+                <input type="text" name="nome" id="inome" placeholder="Digite Aqui" required minlength="5" maxlength="10">
+            </label>
+        </p>
+
+        <p>
+            <label for="ipass">
+                Senha : <input type="password" name="pass" id="ipass" required minlength="5" maxlength="10" placeholder="Digete aqui">
+            </label>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
+
+
+
+    </form>
+
 </body>
 
 </html>
