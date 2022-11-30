@@ -33,6 +33,9 @@
           -size : tamanho da caixa
           -placeholder="" : dica de digitação para caixa
           -autocomplete="off"  : desabilita preenchimento automatico no formlário
+
+          -min="" minimo numerico
+          -max="" maximo numerico
         
         -->
 
@@ -74,7 +77,7 @@
 
     <h1>Elementos em um Formulário</h1>
 
-    <form action="assets/pages/cadastro.php" method="post" autocomplete="off">
+    <form action="assets/pages/cadastro.php" method="get" autocomplete="off">
 
         <p>
             <label for="inome">
@@ -84,19 +87,48 @@
         </p>
 
         <p>
-            <label for="ipass">
-                Senha : <input type="password" name="pass" id="ipass" required minlength="5" maxlength="10" placeholder="Digete aqui">
+            <label for="imedia">
+                Mádia : 
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" value="5.0">
             </label>
         </p>
+
+        <p>
+            <label for="ihora">
+                Hora Local 
+                  </label>
+        </p>
+
+        <p>
+            <label for="imes">
+                Periodo do mes
+                <input type="month" name="mes" id="imes" value="2023-11">
+            </label>
+        </p>
+
+        <p>
+            <label for="idia">
+                Dia do mes : <input type="date" name="dia" id="idia" value="2023-11-30">
+            </label>
+        </p>
+
+        <p>
+            <label for="itime">
+                Hora Local
+            </label>
+            <input type="time" name="time" id="itime" value="13:54">
+        </p>
+       
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
 
-
-
-
+       
 
     </form>
+
+    
+
 
 </body>
 
