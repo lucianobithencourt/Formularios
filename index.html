@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Formulários</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Criando 1º Formulários</h1>
+
+
+    <form method="post" action="cadastro.php">
+
+        <!-- desligando funções do formulario 
+        
+        
+        -->
+
+        <!-- metodos de envio de formularios
+            -GET : METODO PADRÃO QUE MOSTRA AS INFORMAÇÕES DE ENVIO DO FORMULARIO
+
+            -POST : OCULTA OS DADOS , E ESTA  LIMITADO A 3MIL BITS = 3 MIL LETRAS E 
+
+            Atributos dos formulario
+            -required - Obrigatorio
+          -minlength="minimo de caracteres"
+          -maxlength="maximo de caratcres"
+          -size : tamanho da caixa
+          -placeholder="" : dica de digitação para caixa
+          -autocomplete="off"  : desabilita preenchimento automatico no formlário
+        
+        -->
+
+
+
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+
+    <hr>
+
+    <form action="assets/pages/cadastro.php" method="post">
+
+        <p>
+            <label for="iuser">
+                Nome de Usuário:
+                <input type="text" name="user" id="iuser" required  maxlength="5" placeholder="Digite seu nome">
+            </label>
+        </p>
+
+        <p>
+            <label for="ipass">
+                Senha : <input type="password" name="pass" id="ipass" required minlength="5" maxlength="8">
+            </label>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
+    </form>
+</body>
+
+</html>
